@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Development Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBlbiUyMGFuZCUyMHBhcGVyfGVufDB8fDB8fHww');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 2px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        .school-logo {
+            display: block;
+            margin: 0 auto 10px auto;
+            width: 100px;
+        }
+        .highlight {
+            background-color: #000;
+            color: #fff;
+            font-weight: bold;
+            padding: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .info label {
+            margin-right: 10px;
+        }
+        .info input {
+            flex-grow: 1;
+        }
+        .bordered-section {
+            border: 2px solid #000;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        td, th {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: left;
+        }
+        .note {
+            font-size: 0.9em;
+            margin-top: 10px;
+            background-color: #000;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .signature {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .signature div {
+            width: 45%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ncw6Os6qZWK7TzbPmn3gdLQyBVoBaSi3yg&s" alt="IES Public School Logo" class="school-logo">
+        <h1>IES Public School, Bhopal</h1>
+        <h2><span class="highlight">Skill Development Analysis</span></h2>
+        <h3>Session: 2022-23</h3>
+        
+        <div class="info">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="class">Class:</label>
+                <input type="text" id="class" name="class">
+            </div>
+        </div>
+        
+        <div class="bordered-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Logical</td>
+                        <td><input type="text" name="logical"></td>
+                    </tr>
+                    <tr>
+                        <td>Naturalistic</td>
+                        <td><input type="text" name="naturalistic"></td>
+                    </tr>
+                    <tr>
+                        <td>Musical</td>
+                        <td><input type="text" name="musical"></td>
+                    </tr>
+                    <tr>
+                        <td>Kinesthetic</td>
+                        <td><input type="text" name="kinesthetic"></td>
+                    </tr>
+                    <tr>
+                        <td>Interpersonal</td>
+                        <td><input type="text" name="interpersonal"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <label for="remark">Remark:</label><br>
+            <textarea id="remark" name="remark" rows="4" cols="50"></textarea><br><br>
+            
+            <div class="signature">
+                <div>
+                    <label for="teacher-sign">Class Teacher Sign:</label>
+                    <input type="text" id="teacher-sign" name="teacher-sign">
+                </div>
+                <div>
+                    <label for="principal-sign">Principal Sign:</label>
+                    <input type="text" id="principal-sign" name="principal-sign">
+                </div>
+            </div>
+        </div>
+        
+        <p class="note">
+            Note: This analysis is based on the observation of students throughout the session. It aims to enhance the above-mentioned skills.
+        </p>
+    </div>
+</body>
+</html>
